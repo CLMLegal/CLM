@@ -90,7 +90,8 @@
 <header class="hero">
   <h1>Streamline Your Legal Operations & Drive Efficiency</h1>
   <p>Expert Legal Support for UK & US Businesses | 10+ Years of Proven Experience</p>
-  <a href="mailto:das.shabbir@gmail.com?subject=Schedule%20a%20Consultation" class="cta-btn">Schedule a Free Consultation</a>
+  <!-- Calendly popup on Schedule a Free Consultation -->
+  <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/hmabid'});return false;" class="cta-btn">Schedule a Free Consultation</a>
 </header>
 
 <section>
@@ -146,11 +147,11 @@
   <h2>Contact Me Directly</h2>
   <form action="https://formspree.io/f/moqgrnlo" method="POST">
     <label for="name">Your Name:</label>
-    <input type="text" name="name" required>
+    <input type="text" name="name" id="name" required>
     <label for="email">Your Email:</label>
-    <input type="email" name="email" required>
+    <input type="email" name="email" id="email" required>
     <label for="message">Your Message:</label>
-    <textarea name="message" rows="5" required></textarea>
+    <textarea name="message" id="message" rows="5" required></textarea>
     <button type="submit" class="cta-btn">Send Message</button>
   </form>
 </section>
