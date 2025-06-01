@@ -82,6 +82,8 @@
       text-decoration: none;
     }
   </style>
+  <!-- Calendly widget script -->
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"></script>
 </head>
 <body>
 
@@ -135,7 +137,8 @@
 <section class="hero" style="background: #eee; color: #000;">
   <h2>Ready to Transform Your Legal Operations?</h2>
   <p>Book a complimentary consultation and let's identify how I can support your success.</p>
-  <a href="mailto:das.shabbir@gmail.com?subject=Schedule%20a%20Consultation" class="cta-btn cta-secondary">Schedule Now</a>
+  <!-- Calendly popup button -->
+  <a href="#" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/hmabid'});return false;" class="cta-btn cta-secondary">Schedule Now</a>
   <p style="margin-top: 1rem;">Or email me at <a href="mailto:das.shabbir@gmail.com">das.shabbir@gmail.com</a></p>
 </section>
 
